@@ -31,14 +31,16 @@ public class MainActivity extends Activity {
         textView_puntosO = (TextView) findViewById(R.id.tv_puntosO);
         boton_limpiar = (Button) findViewById(R.id.bt_limpiar);
         boton_salir= (Button) findViewById(R.id.bt_salir);
+        llenarMatrizBotones();
 
-        //limpiarJuego();
+        textView_turno.setText(turno);
 
 
     }
 
 
     public void llenarMatrizBotones(){
+        botones= new Button[3][3];
         botones[0][0]= (Button)findViewById(R.id.bt_11);
         botones[0][1]= (Button)findViewById(R.id.bt_12);
         botones[0][2]= (Button)findViewById(R.id.bt_13);
@@ -50,10 +52,19 @@ public class MainActivity extends Activity {
         botones[2][2]= (Button)findViewById(R.id.bt_33);
     }
 
-    public void limpiarJuego(){
+    public void limpiarJuego(View view){
+        Button button = (Button) view;
+        puntosO=0;
+        puntosX=0;
+        textView_puntosX.setText(String.valueOf(puntosX));
+        textView_puntosO.setText(String.valueOf(puntosO));
+        textView_ganador.setText(" ");
+
         for(int i=0;i<3;i++){
             for(int j=0; j<3; j++){
                 botones[i][j].setText(" ");
+                botones[i][j].setEnabled(true);
+
             }
         }
     }
@@ -70,9 +81,11 @@ public class MainActivity extends Activity {
     public void cambiarTurno(){
         if(turno == "X"){
             turno="O";
+            textView_turno.setText(turno);
         }
         else{
             turno="X";
+            textView_turno.setText(turno);
         }
 
 

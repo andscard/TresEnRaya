@@ -32,7 +32,7 @@
         android:layout_alignBaseline="@+id/bt_13"
         android:layout_alignBottom="@+id/bt_13"
         android:layout_centerHorizontal="true"
-        android:onClick="presinarBoton" />
+        android:onClick="presionarBoton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -168,7 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:id="@+id/bt_11"
-        android:onClick="presionarBoton "
+        android:onClick="presionarBoton"
         android:layout_below="@+id/lb_turno"
         android:layout_toLeftOf="@+id/bt_12"
         android:layout_toStartOf="@+id/bt_12"
