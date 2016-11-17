@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.tresenraya.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_turno"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:id="@+id/lb_turno" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_12"
+        android:layout_alignBaseline="@+id/bt_13"
+        android:layout_alignBottom="@+id/bt_13"
+        android:layout_centerHorizontal="true"
+        android:onClick="presinarBoton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_13"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_alignBaseline="@+id/bt_11"
+        android:layout_alignBottom="@+id/bt_11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="presionarBoton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_22"
+        android:layout_alignLeft="@+id/bt_13"
+        android:layout_alignStart="@+id/bt_13"
+        android:id="@+id/bt_23"
+        android:onClick="presionarBoton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_32"
+        android:layout_alignBaseline="@+id/bt_31"
+        android:layout_alignBottom="@+id/bt_31"
+        android:layout_alignLeft="@+id/bt_22"
+        android:layout_alignStart="@+id/bt_22"
+        android:onClick="presionarBoton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt_32"
+        android:layout_alignLeft="@+id/bt_23"
+        android:layout_alignStart="@+id/bt_23"
+        android:id="@+id/bt_33"
+        android:onClick="presionarBoton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_22"
+        android:layout_alignBaseline="@+id/bt_21"
+        android:layout_alignBottom="@+id/bt_21"
+        android:layout_alignLeft="@+id/bt_12"
+        android:layout_alignStart="@+id/bt_12"
+        android:onClick="presionarBoton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/bt_31"
+        android:layout_below="@+id/bt_21"
+        android:layout_alignLeft="@+id/bt_21"
+        android:layout_alignStart="@+id/bt_21"
+        android:onClick="presionarBoton" />
+
+    <TextView
+        android:text="@string/jugador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_12"
+        android:layout_alignLeft="@+id/bt_11"
+        android:layout_alignStart="@+id/bt_11"
+        android:id="@+id/jugador1"
+        android:textSize="14sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_turno"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/bt_12"
+        android:layout_toEndOf="@+id/bt_12"
+        android:textStyle="normal|bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/jugador1"
+        android:layout_alignRight="@+id/bt_11"
+        android:layout_alignEnd="@+id/bt_11"
+        android:id="@+id/tv_puntosX" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/jugador2"
+        android:layout_alignRight="@+id/bt_13"
+        android:layout_alignEnd="@+id/bt_13"
+        android:id="@+id/tv_puntosO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_limpiar"
+        android:layout_alignLeft="@+id/tv_puntosX"
+        android:layout_alignStart="@+id/tv_puntosX"
+        android:layout_marginTop="52dp"
+        android:id="@+id/tv_ganador" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/bt_21"
+        android:onClick="presionarBoton"
+        android:layout_below="@+id/bt_11"
+        android:layout_alignLeft="@+id/bt_11"
+        android:layout_alignStart="@+id/bt_11" />
+
+    <Button
+        android:text="@string/boton_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_salir"
+        android:onClick="salirJuego"
+        android:layout_alignBaseline="@+id/bt_limpiar"
+        android:layout_alignBottom="@+id/bt_limpiar"
+        android:layout_toRightOf="@+id/bt_32"
+        android:layout_toEndOf="@+id/bt_32" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/bt_11"
+        android:onClick="presionarBoton "
+        android:layout_below="@+id/lb_turno"
+        android:layout_toLeftOf="@+id/bt_12"
+        android:layout_toStartOf="@+id/bt_12"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+    <TextView
+        android:text="@string/jugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jugador2"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/bt_13"
+        android:layout_alignLeft="@+id/bt_13"
+        android:layout_alignStart="@+id/bt_13" />
+
+    <Button
+        android:text="@string/boton_limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_limpiar"
+        android:layout_marginTop="23dp"
+        android:onClick="limpiarJuego"
+        android:layout_below="@+id/bt_32"
+        android:layout_alignRight="@+id/lb_turno"
+        android:layout_alignEnd="@+id/lb_turno"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+</RelativeLayout>

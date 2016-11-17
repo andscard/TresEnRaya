@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TresEnRaya</string>
+    <string name="jugador1">X:</string>
+    <string name="jugador2">O:</string>
+    <string name="boton_limpiar">LIMPIAR</string>
+    <string name="boton_salir">SALIR</string>
+    <string name="label_turno">Turno de: </string>
+</resources>
